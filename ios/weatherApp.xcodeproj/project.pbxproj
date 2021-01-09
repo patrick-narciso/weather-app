@@ -8,15 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* weatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* weatherAppTests.m */; };
+		0A19FFDDBC7743FA9629161B /* Barlow-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28EF48E1837D4BA6938CA4AB /* Barlow-ExtraBoldItalic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		275A0449E7374F5CBB4B6E04 /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE665CDCF121435BA52C407F /* Barlow-LightItalic.ttf */; };
+		28E0E67973E74F0B966C15BF /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B949E2298924C82B9D63096 /* Barlow-ExtraBold.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* weatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* weatherAppTests.m */; };
+		2E2459DFCABA4C94AA2D238F /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57B75387830546479E662001 /* Barlow-MediumItalic.ttf */; };
+		3DE8301C4B924E68A1B71476 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3C40373743E400D96BEF674 /* Barlow-Thin.ttf */; };
+		4818EF551C4642EAA6F46930 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52E0F4A832DF4C4497DFD236 /* Barlow-ExtraLight.ttf */; };
+		58F723D2D5064EC197BA8DFC /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 244348F6BDC84DBA888A32B7 /* Barlow-Light.ttf */; };
 		5E3FBB26E6FA444AFAC71F18 /* libPods-weatherApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E575F9147DDC30BAA7D0BEF /* libPods-weatherApp.a */; };
+		75911A0503F544EAB4D91B06 /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9AE474180E74344A3837339 /* Barlow-ExtraLightItalic.ttf */; };
+		7D4E7122F0314EB49DFF8474 /* Barlow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DF439E71014794B7007FBB /* Barlow-SemiBoldItalic.ttf */; };
+		819DC1441F2D4C2B989EA6A8 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E233FD9B92488987389DFA /* Barlow-Medium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A51D368B2D3647D68B3751E2 /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5B65ECD3F154261A6FA3F17 /* Barlow-SemiBold.ttf */; };
+		A8C55689623D403380164044 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50068A0887844E5E8BFAE5C7 /* Barlow-BlackItalic.ttf */; };
+		B2E9DAE05260459BAB8D25BD /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0977E7B48C584DC2A405DE41 /* Barlow-ThinItalic.ttf */; };
+		B348ACD6CEF34699B165F325 /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC5BF8523010451198FBC49A /* Barlow-BoldItalic.ttf */; };
+		B7945C2AF4E04431960694E1 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0412EE9965E24E57955A5217 /* Barlow-Regular.ttf */; };
+		CA138E60C4DF489C9FAE89BC /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB2D5E4799A24773B078C250 /* Barlow-Italic.ttf */; };
+		CF7EDE4D1A4044179028FB2B /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B4D8158787940EC8980D748 /* Barlow-Black.ttf */; };
+		FA81584A7B7B44C0B0FB4A26 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B178E726156D4FADA09C8E68 /* Barlow-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,20 +59,38 @@
 		00E356EE1AD99517003FC87E /* weatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* weatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherAppTests.m; sourceTree = "<group>"; };
+		0412EE9965E24E57955A5217 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Regular.ttf"; path = "../src/assets/fonts/Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		0977E7B48C584DC2A405DE41 /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ThinItalic.ttf"; path = "../src/assets/fonts/Barlow-ThinItalic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = weatherApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = weatherApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = weatherApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = weatherApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = weatherApp/main.m; sourceTree = "<group>"; };
+		244348F6BDC84DBA888A32B7 /* Barlow-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Light.ttf"; path = "../src/assets/fonts/Barlow-Light.ttf"; sourceTree = "<group>"; };
+		28EF48E1837D4BA6938CA4AB /* Barlow-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Barlow-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* weatherApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weatherApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* weatherApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weatherApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E575F9147DDC30BAA7D0BEF /* libPods-weatherApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weatherApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B949E2298924C82B9D63096 /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraBold.ttf"; path = "../src/assets/fonts/Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
+		50068A0887844E5E8BFAE5C7 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-BlackItalic.ttf"; path = "../src/assets/fonts/Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
+		52E0F4A832DF4C4497DFD236 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraLight.ttf"; path = "../src/assets/fonts/Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
+		57B75387830546479E662001 /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-MediumItalic.ttf"; path = "../src/assets/fonts/Barlow-MediumItalic.ttf"; sourceTree = "<group>"; };
+		63DF439E71014794B7007FBB /* Barlow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Barlow-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		66E233FD9B92488987389DFA /* Barlow-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Medium.ttf"; path = "../src/assets/fonts/Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		7B4D8158787940EC8980D748 /* Barlow-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Black.ttf"; path = "../src/assets/fonts/Barlow-Black.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = weatherApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81ADD235544B7D6CBC1A6A17 /* Pods-weatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherApp.release.xcconfig"; path = "Target Support Files/Pods-weatherApp/Pods-weatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC5BF8523010451198FBC49A /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-BoldItalic.ttf"; path = "../src/assets/fonts/Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B178E726156D4FADA09C8E68 /* Barlow-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Bold.ttf"; path = "../src/assets/fonts/Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		BE665CDCF121435BA52C407F /* Barlow-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-LightItalic.ttf"; path = "../src/assets/fonts/Barlow-LightItalic.ttf"; sourceTree = "<group>"; };
+		C5B65ECD3F154261A6FA3F17 /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-SemiBold.ttf"; path = "../src/assets/fonts/Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
 		C61F6402162201DFE274E960 /* Pods-weatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherApp.debug.xcconfig"; path = "Target Support Files/Pods-weatherApp/Pods-weatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C9AE474180E74344A3837339 /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EB2D5E4799A24773B078C250 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Italic.ttf"; path = "../src/assets/fonts/Barlow-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F3C40373743E400D96BEF674 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Thin.ttf"; path = "../src/assets/fonts/Barlow-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +157,31 @@
 			name = weatherApp;
 			sourceTree = "<group>";
 		};
+		1617BB313D3042779D285FC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B4D8158787940EC8980D748 /* Barlow-Black.ttf */,
+				50068A0887844E5E8BFAE5C7 /* Barlow-BlackItalic.ttf */,
+				B178E726156D4FADA09C8E68 /* Barlow-Bold.ttf */,
+				AC5BF8523010451198FBC49A /* Barlow-BoldItalic.ttf */,
+				4B949E2298924C82B9D63096 /* Barlow-ExtraBold.ttf */,
+				28EF48E1837D4BA6938CA4AB /* Barlow-ExtraBoldItalic.ttf */,
+				52E0F4A832DF4C4497DFD236 /* Barlow-ExtraLight.ttf */,
+				C9AE474180E74344A3837339 /* Barlow-ExtraLightItalic.ttf */,
+				EB2D5E4799A24773B078C250 /* Barlow-Italic.ttf */,
+				244348F6BDC84DBA888A32B7 /* Barlow-Light.ttf */,
+				BE665CDCF121435BA52C407F /* Barlow-LightItalic.ttf */,
+				66E233FD9B92488987389DFA /* Barlow-Medium.ttf */,
+				57B75387830546479E662001 /* Barlow-MediumItalic.ttf */,
+				0412EE9965E24E57955A5217 /* Barlow-Regular.ttf */,
+				C5B65ECD3F154261A6FA3F17 /* Barlow-SemiBold.ttf */,
+				63DF439E71014794B7007FBB /* Barlow-SemiBoldItalic.ttf */,
+				F3C40373743E400D96BEF674 /* Barlow-Thin.ttf */,
+				0977E7B48C584DC2A405DE41 /* Barlow-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +198,6 @@
 				C61F6402162201DFE274E960 /* Pods-weatherApp.debug.xcconfig */,
 				81ADD235544B7D6CBC1A6A17 /* Pods-weatherApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,6 +217,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4EA65E8140E06A47AB5253F2 /* Pods */,
+				1617BB313D3042779D285FC4 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -314,6 +375,24 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CF7EDE4D1A4044179028FB2B /* Barlow-Black.ttf in Resources */,
+				A8C55689623D403380164044 /* Barlow-BlackItalic.ttf in Resources */,
+				FA81584A7B7B44C0B0FB4A26 /* Barlow-Bold.ttf in Resources */,
+				B348ACD6CEF34699B165F325 /* Barlow-BoldItalic.ttf in Resources */,
+				28E0E67973E74F0B966C15BF /* Barlow-ExtraBold.ttf in Resources */,
+				0A19FFDDBC7743FA9629161B /* Barlow-ExtraBoldItalic.ttf in Resources */,
+				4818EF551C4642EAA6F46930 /* Barlow-ExtraLight.ttf in Resources */,
+				75911A0503F544EAB4D91B06 /* Barlow-ExtraLightItalic.ttf in Resources */,
+				CA138E60C4DF489C9FAE89BC /* Barlow-Italic.ttf in Resources */,
+				58F723D2D5064EC197BA8DFC /* Barlow-Light.ttf in Resources */,
+				275A0449E7374F5CBB4B6E04 /* Barlow-LightItalic.ttf in Resources */,
+				819DC1441F2D4C2B989EA6A8 /* Barlow-Medium.ttf in Resources */,
+				2E2459DFCABA4C94AA2D238F /* Barlow-MediumItalic.ttf in Resources */,
+				B7945C2AF4E04431960694E1 /* Barlow-Regular.ttf in Resources */,
+				A51D368B2D3647D68B3751E2 /* Barlow-SemiBold.ttf in Resources */,
+				7D4E7122F0314EB49DFF8474 /* Barlow-SemiBoldItalic.ttf in Resources */,
+				3DE8301C4B924E68A1B71476 /* Barlow-Thin.ttf in Resources */,
+				B2E9DAE05260459BAB8D25BD /* Barlow-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;

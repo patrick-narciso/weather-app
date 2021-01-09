@@ -12,8 +12,13 @@ const theme: DefaultTheme = {
     background: '#FFFFFF',
     primary: '#0DA0EA',
     secondary: '#0D9FEA',
-    text: '#000000',
-    lightText: '#AAAAAA'
+    text: '#444444',
+    lightText: '#999999'
+  },
+  fonts: {
+    regular: 'Barlow-Regular',
+    bold: 'Barlow-Bold',
+    semiBold: 'Barlow-SemiBold'
   }
 };
 

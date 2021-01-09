@@ -16,5 +16,10 @@ declare module 'styled-components' {
       text: string;
       lightText: string;
     };
+    fonts: {
+      regular: string;
+      bold: string;
+      semiBold: string;
+    };
   }
 }

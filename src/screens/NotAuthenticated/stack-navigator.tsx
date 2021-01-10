@@ -8,7 +8,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 const NotAuthenticatedStackNavigator: React.FC = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Home" headerMode="none">
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

@@ -18,7 +18,9 @@ const theme: DefaultTheme = {
   fonts: {
     regular: 'Barlow-Regular',
     bold: 'Barlow-Bold',
-    semiBold: 'Barlow-SemiBold'
+    semiBold: 'Barlow-SemiBold',
+    medium: 'Barlow-Medium',
+    light: 'Barlow-Light'
   }
 };
 

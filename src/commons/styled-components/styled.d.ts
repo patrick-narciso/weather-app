@@ -20,6 +20,8 @@ declare module 'styled-components' {
       regular: string;
       bold: string;
       semiBold: string;
+      medium: string;
+      light: string;
     };
   }
 }

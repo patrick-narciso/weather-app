@@ -72,7 +72,7 @@ export const Panel = {
     color: #000000;
     font-size: 18px;
     line-height: 22px;
-    margin-top: 4px;
+    text-align: center;
   `,
   Temperature: styled.Text`
     font-family: ${({ theme }) => theme.fonts.light};

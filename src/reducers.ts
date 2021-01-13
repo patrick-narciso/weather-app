@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
 
-import auth from './modules/auth/duck';
+import weather from './modules/weather/duck';
 
 const rootReducer = combineReducers({
-  auth
+  weather
 });
 
 type RootState = ReturnType<typeof rootReducer>;

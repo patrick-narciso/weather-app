@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import dayjs from 'dayjs';
 import { useWindowDimensions } from 'react-native';
+import { useDispatch } from 'react-redux';
 
 import BannerDay from '~/assets/images/svg/day-banner.svg';
 import PinIcon from '~/assets/icons/svg/pin.svg';
@@ -12,73 +14,98 @@ import DayTimeIcon from '~/assets/icons/svg/daytime.svg';
 import ArrowUp from '~/assets/icons/svg/arrow-up.svg';
 import ArrowDown from '~/assets/icons/svg/arrow-down.svg';
 
+import { getCurrentWeather } from '~/modules/weather/duck';
+import { capitalize } from '~/utils/formatters';
+import { useTypedSelector } from '~/reducers';
+import { Spinner } from '~/components';
+
+import { OPEN_WEATHER_ICON_URL } from '@env';
+
 import { Container, Panel } from './styles';
 
 const Home: React.FC = () => {
+  const dispatch = useDispatch();
   const screenWidth = useWindowDimensions().width;
+  const { weatherData, loading } = useTypedSelector((state) => state.weather);
+
+  useEffect(() => {
+    dispatch(getCurrentWeather());
+  }, [dispatch]);
 
   const cards = [
     {
-      title: '49%',
-      subtitle: 'Humidity',
+      title: `${weatherData?.main.humidity}%`,
+      subtitle: 'Umidade',
       icon: <HumidityIcon />
     },
     {
-      title: '1,007mBar',
-      subtitle: 'Pressure',
+      title: `${weatherData?.main.pressure}mBar`,
+      subtitle: 'Pressão',
       icon: <PressureIcon />
     },
     {
-      title: '23 km/h',
-      subtitle: 'Wind',
+      title: `${weatherData?.wind.speed} km/h`,
+      subtitle: 'Vento',
       icon: <WindIcon />
     },
     {
-      title: '6:03 AM',
-      subtitle: 'Sunrise',
+      title: dayjs.unix(weatherData?.sys.sunrise).format('HH:mm'),
+      subtitle: 'Nascer do Sol',
       icon: <SunriseIcon />
     },
     {
-      title: '7:05 PM',
-      subtitle: 'Sunset',
+      title: dayjs.unix(weatherData?.sys.sunset).format('HH:mm'),
+      subtitle: 'Pôr do Sol',
       icon: <SunsetIcon />
     },
     {
       title: '13h 1m',
-      subtitle: 'Daytime',
+      subtitle: 'Dia',
       icon: <DayTimeIcon />
     }
   ];
+
+  if (loading) {
+    return <Spinner />;
+  }
 
   return (
     <Container>
       <BannerDay width={screenWidth} />
       <Panel.Container>
         <Panel.Header>
-          <Panel.HeaderText>Sunday, 19 may 2019 | 4:30PM</Panel.HeaderText>
+          <Panel.HeaderText>
+            {dayjs().format('dddd, D MMM YYYY  |  HH:mm')}
+          </Panel.HeaderText>
           <Panel.Geolocation>
-            Mumbai, India <PinIcon />
+            {weatherData?.name} <PinIcon />
           </Panel.Geolocation>
         </Panel.Header>
         <Panel.Main>
           <Panel.Row>
             <Panel.Card>
               <Panel.WeatherIcon
-                source={{ uri: 'https://openweathermap.org/img/wn/10d@2x.png' }}
+                source={{
+                  uri: `${OPEN_WEATHER_ICON_URL}/${weatherData?.weather[0].icon}@2x.png`
+                }}
               />
-              <Panel.WeatherText>Sunny</Panel.WeatherText>
+              <Panel.WeatherText>
+                {capitalize(weatherData?.weather[0].description)}
+              </Panel.WeatherText>
             </Panel.Card>
             <Panel.Card flexDirection="row">
-              <Panel.Temperature>33</Panel.Temperature>
+              <Panel.Temperature>
+                {parseInt(weatherData?.main.temp, 10)}
+              </Panel.Temperature>
               <Panel.Measure>°C</Panel.Measure>
             </Panel.Card>
             <Panel.Card>
               <Panel.CurrentTemp>
-                35°C
+                {parseInt(weatherData?.main.temp_max, 10)}°C
                 <ArrowUp />
               </Panel.CurrentTemp>
               <Panel.CurrentTemp>
-                27°C
+                {parseInt(weatherData?.main.temp_min, 10)}°C
                 <ArrowDown />
               </Panel.CurrentTemp>
             </Panel.Card>

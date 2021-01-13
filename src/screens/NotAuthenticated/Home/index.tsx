@@ -85,7 +85,7 @@ const Home: React.FC = () => {
           </Panel.Row>
           <Panel.Row>
             {cards.map((card) => (
-              <Panel.Card>
+              <Panel.Card key={card.title}>
                 {card.icon}
                 <Panel.CartTitle>{card.title}</Panel.CartTitle>
                 <Panel.CardSubtitle>{card.subtitle}</Panel.CardSubtitle>

@@ -7,7 +7,7 @@ abstract class HttpClient {
   public constructor(baseURL: string) {
     this.instance = axios.create({
       baseURL,
-      timeout: REQUEST_TIMEOUT
+      timeout: Number(REQUEST_TIMEOUT)
     });
 
     this._initializeResponseInterceptor();

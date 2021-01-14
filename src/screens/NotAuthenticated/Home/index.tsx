@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
+import { Platform, Button, DevSettings } from 'react-native';
 import dayjs from 'dayjs';
+import Geolocation from '@react-native-community/geolocation';
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 import { useDispatch } from 'react-redux';
 
 import PinIcon from '~/assets/icons/svg/pin.svg';
@@ -20,14 +23,41 @@ import { Spinner, Banner } from '~/components';
 import { OPEN_WEATHER_ICON_URL } from '@env';
 
 import { Container, Panel } from './styles';
+import { HomeProps } from './types';
 
-const Home: React.FC = () => {
+const Home: React.FC<HomeProps> = ({ navigation }) => {
   const dispatch = useDispatch();
-  const { weatherData, loading } = useTypedSelector((state) => state.weather);
+  const { weatherData, loading, error } = useTypedSelector(
+    (state) => state.weather
+  );
+  const isAndroid = Platform.OS === 'android';
+  const locationPlatform = isAndroid
+    ? PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION
+    : PERMISSIONS.IOS.LOCATION_WHEN_IN_USE;
 
   useEffect(() => {
-    dispatch(getCurrentWeather());
-  }, [dispatch]);
+    if (error !== null) {
+      navigation.navigate('Error', {
+        message: 'Ocorreu um problema, tente novamente'
+      });
+    }
+  }, [error, navigation]);
+
+  useEffect(() => {
+    (async function () {
+      const result = await request(locationPlatform);
+      if (result === RESULTS.GRANTED) {
+        Geolocation.getCurrentPosition(({ coords }) => {
+          const { latitude, longitude } = coords;
+          dispatch(getCurrentWeather(latitude, longitude));
+        });
+      } else {
+        navigation.navigate('Error', {
+          message: 'Ocorreu um problema, é necessário acesso à sua localização'
+        });
+      }
+    })();
+  }, [dispatch, locationPlatform, navigation]);
 
   const cards = [
     {
@@ -116,6 +146,7 @@ const Home: React.FC = () => {
               </Panel.Card>
             ))}
           </Panel.Row>
+          <Button title="Atualizar" onPress={() => DevSettings.reload()} />
         </Panel.Main>
       </Panel.Container>
     </Container>

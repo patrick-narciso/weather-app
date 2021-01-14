@@ -6,9 +6,9 @@ class WeatherServiceApi extends HttpClient {
     super(OPEN_WEATHER_URL);
   }
 
-  public getCurrentWeather = () => {
+  public getCurrentWeather = (lat: number, lon: number) => {
     return this.instance.get(
-      `/weather?q=Rio%20de%20Janeiro&appid=${OPEN_WEATHER_KEY}&lang=pt_br&units=metric`
+      `/weather?lat=${lat}&lon=${lon}&appid=${OPEN_WEATHER_KEY}&lang=pt_br&units=metric`
     );
   };
 }

@@ -40,11 +40,11 @@ export default function reducer(
 }
 
 // Action Creators
-export function getCurrentWeather() {
+export function getCurrentWeather(lat: number, lon: number) {
   return async (dispatch: Dispatch) => {
     dispatch({ type: Actions.FETCH_CURRENT_WEATHER_START });
     try {
-      const weatherData = await WeatherService.getCurrentWeather();
+      const weatherData = await WeatherService.getCurrentWeather(lat, lon);
       dispatch({
         type: Actions.FETCH_CURRENT_WEATHER_SUCCESS,
         payload: weatherData

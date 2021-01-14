@@ -5,6 +5,7 @@ import NotAuthenticatedStackNavigator from './screens/NotAuthenticated/stack-nav
 
 export type RootStackParamList = {
   Home: undefined;
+  Error: { message?: string };
 };
 
 const Navigator: React.FC = () => {

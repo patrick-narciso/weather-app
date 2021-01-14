@@ -7,7 +7,7 @@ import { ImageBackground } from './styles';
 const Banner: React.FC = () => {
   const screenWidth = useWindowDimensions().width;
   const hours = Number(dayjs().format('HH'));
-  const isDayTime = hours > 6 && hours < 20;
+  const isDayTime = hours > 6 && hours < 19;
 
   if (isDayTime) {
     return (

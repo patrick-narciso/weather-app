@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import dayjs from 'dayjs';
-import { useWindowDimensions } from 'react-native';
 import { useDispatch } from 'react-redux';
 
-import BannerDay from '~/assets/images/svg/day-banner.svg';
 import PinIcon from '~/assets/icons/svg/pin.svg';
 import HumidityIcon from '~/assets/icons/svg/humidity.svg';
 import PressureIcon from '~/assets/icons/svg/pressure.svg';
@@ -17,7 +15,7 @@ import ArrowDown from '~/assets/icons/svg/arrow-down.svg';
 import { getCurrentWeather } from '~/modules/weather/duck';
 import { capitalize } from '~/utils/formatters';
 import { useTypedSelector } from '~/reducers';
-import { Spinner } from '~/components';
+import { Spinner, Banner } from '~/components';
 
 import { OPEN_WEATHER_ICON_URL } from '@env';
 
@@ -25,7 +23,6 @@ import { Container, Panel } from './styles';
 
 const Home: React.FC = () => {
   const dispatch = useDispatch();
-  const screenWidth = useWindowDimensions().width;
   const { weatherData, loading } = useTypedSelector((state) => state.weather);
 
   useEffect(() => {
@@ -71,7 +68,7 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <BannerDay width={screenWidth} />
+      <Banner />
       <Panel.Container>
         <Panel.Header>
           <Panel.HeaderText>
@@ -112,7 +109,7 @@ const Home: React.FC = () => {
           </Panel.Row>
           <Panel.Row>
             {cards.map((card) => (
-              <Panel.Card key={card.title}>
+              <Panel.Card key={card.subtitle}>
                 {card.icon}
                 <Panel.CartTitle>{card.title}</Panel.CartTitle>
                 <Panel.CardSubtitle>{card.subtitle}</Panel.CardSubtitle>

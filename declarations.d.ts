@@ -6,3 +6,5 @@ declare module '*.svg' {
 }
 
 declare module '@env';
+
+declare module '*.png';
